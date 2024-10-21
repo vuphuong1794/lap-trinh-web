@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#tinxemnhieu{
+    width: 250px;
+    background-color: #FFFFCC;
+    border: 1px solid #0099CC;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#tinxemnhieu a{
+    text-decoration: none;
+    color: #CC3399;
+}
+
+#tinxemnhieu a:hover{
+    color: #FFCC00;
+}
+
+#tinxemnhieu h4{
+    color: #FFFF00;
+    background-color: #0099CC;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+#tinxemnhieu p{
+    border-top: 1px solid #0099CC;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: -1px;
+    
+}

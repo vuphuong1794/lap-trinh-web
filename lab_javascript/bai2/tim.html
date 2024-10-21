@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm kiếm</title>
+    <script type="text/javascript" src="checksearch.js"></script>
+</head>
+<body>
+    <h1>Tìm kiếm</h1>
+    <form onsubmit="return checksearch()" id="formtim" name="formtim" action="kqtim.html" method="get">
+        <input 
+            onclick="if(this.value=='Tìm kiếm') this.value=''" 
+            onblur="if(this.value=='') this.value='Tìm kiếm'" 
+            name="tukhoa" 
+            id="tukhoa" 
+            type="text" 
+            value="Tìm kiếm" />
+        <input name="btntim" id="btntim" type="submit" value="TÌM" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="" id="flogin" name="flogin" method="post" onsubmit="return checklogin()">
+        Username: <input type="text" name="u" id="u"><br>
+        Password: <input type="password" name="p" id="p"><br>
+        <input type="submit" value="Login">
+    </form>
+    <span id="dongho"></span>
+</body>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">
+    function tg(){
+        var currentTime = new Date();
+        var month = currentTime.getMonth() + 1;
+        var day = currentTime.getDate();
+        var year = currentTime.getFullYear();
+        var hour = currentTime.getHours();
+        var minute = currentTime.getMinutes();
+        var second = currentTime.getSeconds();
+        document.getElementById("dongho").innerHTML = month + "/" + day + "/" + year + " " + hour + ":" + minute + ":" + second;
+    }
+    setInterval("tg()", 1000);
+</script>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên CLB yêu nhạc</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+            color: #0000FF;
+            margin-bottom: 10px;
+        }
+        .form-container {
+            width: 500px;
+            margin: 0 auto;
+            background-color: #FFB6C1;
+            border: 2px solid #800080;
+            
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid #800080;
+            padding: 5px;
+        }
+        .label {
+            width: 20%;
+            background-color: #FFB6C1;
+            color: #0000FF;
+            font-weight: bold;
+        }
+        .input {
+            color: #0000FF;
+            width: 70%;
+        }
+        input[type="text"], input[type="password"], select, textarea {
+            width: 100%;
+            background-color: darkcyan;
+            border: none;
+            color: yellow;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        textarea {
+            height: 60px;
+        }
+        .buttons {
+            text-align: center;
+            margin: 10px;
+        }
+        input[type="submit"], input[type="reset"], input[type="button"] {
+            margin: 0 5px;
+            padding: 2px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>ĐĂNG KÝ THÀNH VIÊN CLB YÊU NHẠC</h2>
+    <div class="form-container">
+        <form>
+            <table>
+                <tr>
+                    <td class="label">Họ tên</td>
+                    <td class="input"><input type="text" name="name" value="Nguyễn Văn Tèo"></td>
+                </tr>
+                <tr>
+                    <td class="label">Tên đăng nhập</td>
+                    <td class="input"><input type="text" name="username" value="teonv"></td>
+                </tr>
+                <tr>
+                    <td class="label">Mật khẩu</td>
+                    <td class="input"><input type="password" name="password" value="••••••"></td>
+                </tr>
+                <tr>
+                    <td class="label">Gõ lại mật khẩu</td>
+                    <td class="input"><input type="password" name="confirm-password" value="••••••"></td>
+                </tr>
+                <tr>
+                    <td class="label">Phái</td>
+                    <td class="input">
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Nam</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Ngoại ngữ</td>
+                    <td class="input">
+                        <input type="checkbox" id="english" name="language" value="english" checked>
+                        <label for="english">Anh</label>
+                        <input type="checkbox" id="french" name="language" value="french">
+                        <label for="french">Pháp</label>
+                        <input type="checkbox" id="chinese" name="language" value="chinese">
+                        <label for="chinese">Hoa</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Nghề nghiệp</td>
+                    <td class="input">
+                        <select name="occupation">
+                            <option value="student" selected>Học sinh-Sinh viên</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Hình</td>
+                    <td class="input">
+                        <input type="text" name="avatar" value="missonha.jpg" readonly style="width: 70%;">
+                        <input type="button" value="Browse..." style="width: 25%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Sở thích</td>
+                    <td class="input">
+                        <textarea name="hobbies">Ngắm trăng, uống trà, vườn rau, nhìn mưa rơi, nghe chim hót, ngâm thơ</textarea>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Làm lại">
+            </div>
+            
+            <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=C100%20%C4%90.%20Nguy%E1%BB%85n%20V%C4%83n%20Qu%C3%A1,%20%C4%90%C3%B4ng%20H%C6%B0ng%20Thu%E1%BA%ADn,%20Qu%E1%BA%ADn%2012,%20H%E1%BB%93%20Ch%C3%AD%20Minh&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 590px; height: 400px;"></iframe><style>.mapouter{display:table;}.gmap_canvas{overflow:hidden;position:relative;height:400px;width:590px;background:#fff;}</style><a href="https://fnfmods.net/fnf-huggy-wuggy-mod/">FNF Huggy Wuggy Mod</a><style>.gmap_canvas iframe{position:relative !important;z-index:2 !important;}.gmap_canvas a{color:#fff !important;position:absolute !important;top:0 !important;left:0 !important;z-index:0 !important;}</style></div></div>
+        </form>
+    </div>
+</body>
+</html>

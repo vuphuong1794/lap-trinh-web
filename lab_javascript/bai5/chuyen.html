@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <p>đã thực thi xong</p>
+        <p><a href="index.html">Quay lại trang chủ</a></p>
+        <p>Sẽ quay lại trang chủ sau <span id="sogiay"></span> &nbsp;giây nữa</p>
+    </center>
+    
+</body>
+<script type="text/javascript">
+    var sogiay = 5;
+    setTimeout("document.location='index.html'",sogiay*1000);
+    setInterval("document.getElementById('sogiay').innerHTML=sogiay--",1000);
+</script>
+</html>
