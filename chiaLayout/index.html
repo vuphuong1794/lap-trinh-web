@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <style type="text/css">
         body {
             padding: 5px;
@@ -55,6 +56,17 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").click(function () {
+                alert("HEADER");
+             })
+
+            $("#header").hover(function () {
+                $("#center").html("day la center")
+            })
+            })
+    </script>
     <div id="khung">
         <div id="header">HEADER</div>
         <div id="left">Main_1</div>

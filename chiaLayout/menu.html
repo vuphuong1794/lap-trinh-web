@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        #menu {
+            width: 180px;
+            background-color: #CC6;
+        }
+        .theloai {
+            background-color: #F63;
+            color: #FFFFFF;
+            display: block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+        #menu a {
+            color: #990000;
+            padding-top: 5px;
+            padding-bottom: 3px;
+            padding-left: 15px;
+            display: block;
+            border-bottom: solid 1px #CF0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #menu a:hover {
+            color: #FF3300;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            //$(".loaitin a").css({"color":"blue", "font-style":"italic"});
+            //$(".loaitin").css("font-size", "200%");
+           /* 
+           $(".theloai").click(function(){
+                var size = $(".loaitin").css("font-size");
+                size = parseInt(size);
+                size = size + 2;
+                $(".loaitin").css("font-size", size + "px");
+            })
+            */
+           /*
+           $(".theloai").click(function(){
+               $(".loaitin").hide(1000);
+           })
+            */
+            /*$(".theloai").click(function(){
+               $(".loaitin").hide(1000);
+               $(".loaitin").show(1000);
+           })
+            */
+            /*
+            $(".theloai").click(function(){
+                
+               //$(".loaitin").slideToggle(1000);
+               $(this).next(".loaitin").slideToggle(1000);
+            })*/
+
+            /*
+            //chỉ mở được 1 loại tin của từng thể loại
+            $(".loaitin").hide()
+            $(".theloai").click(function(){
+                $(".loaitin").hide(1000);
+                $(this).next().show(1000);
+                
+             })
+            */
+            //khi mở web chỉ có những loại tin trong tin xã hội được hiện còn lại ẩn
+            $(".loaitin").hide()
+            $(".theloai").click(function(){
+                $(".loaitin").hide(1000);
+                $(this).next().show(1000);
+                
+             })
+        })
+    </script>
+    <div id="menu">
+        <div class="theloai">Tin xã hội</div>
+        <div class="loaitin">
+            <a href="#">Thể thao</a>
+            <a href="#">Du lịch</a>
+            <a href="#">Xã hội</a>
+            <a href="#">Sức khỏe</a>
+            <a href="#">Âm nhạc</a>
+        </div>
+        
+        <div class="theloai">Thế giới web</div>
+        <div class="loaitin">
+            <a href="#">Tools</a>
+            <a href="#">Links</a>
+            <a href="#">Template</a>
+            <a href="#">Document</a>
+        </div>
+        
+        <div class="theloai">Nghệ thuật sống</div>
+        <div class="loaitin">
+            <a href="#">Sống đẹp</a>
+        </div>
+    
+        <div class="theloai">Thư giãn</div>
+        <div class="loaitin">
+            <a href="#">Thơ hay</a>
+            <a href="#">Đồ vui</a>
+        </div>
+    </div>    
+
+</body>
+</html>
